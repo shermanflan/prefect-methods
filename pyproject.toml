@@ -8,3 +8,6 @@ dependencies = [
     "prefect",
     "prefect-cloud",
 ]
+
+[project.scripts]
+quickstart-01-demo = "01_getting_started:main"
