@@ -1,3 +1,0 @@
-# prefect and related
-prefect==3.4.19
-prefect-cloud==0.1.8
