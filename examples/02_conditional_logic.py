@@ -11,6 +11,7 @@ def my_flow(work_to_do: bool):
     if not work_to_do:
         return Completed(message="No work to do 💤", name="Skipped")
     else:
+        # Invoke task
         explain_tasks()
         return Completed(message="Work was done 💪")
 
