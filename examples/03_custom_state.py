@@ -8,6 +8,9 @@ def add_one(x):
 
 @flow
 def my_flow():
+    """
+    Since no dependencies exist between the 2 tasks, they run concurrently.
+    """
     # By default, task state is Completed if no failures occur and any
     # Python object is returned (except the Prefect Failed state)
     result = add_one(1)
