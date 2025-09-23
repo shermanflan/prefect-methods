@@ -14,8 +14,8 @@ def stop_at_floor(floor):
     time.sleep(floor)
     print(f"elevator stops on floor {floor}")
 
-@flow(task_runner=ThreadPoolTaskRunner(max_workers=3))
-# @flow(task_runner=ProcessPoolTaskRunner(max_workers=3))
+# @flow(task_runner=ThreadPoolTaskRunner(max_workers=3))
+@flow(task_runner=ProcessPoolTaskRunner(max_workers=3))
 def elevator():
     floors = []
 
