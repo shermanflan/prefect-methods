@@ -22,7 +22,9 @@ def elevator():
     for floor in range(10, 0, -1):
         floors.append(stop_at_floor.submit(floor))
 
-    wait(floors) # wait for the sequence of futures to complete
+    # wait for the sequence of futures to complete
+    # i.e. resolve terminal future(s)
+    wait(floors) 
 
 
 if __name__ == "__main__":
