@@ -1,10 +1,12 @@
 from prefect import flow, task
 from prefect.states import Completed
 
+
 @task(log_prints=True)
 def explain_tasks():
     print("run any python code here!")
     print("but maybe just a little bit")
+
 
 @flow
 def my_flow(work_to_do: bool):
