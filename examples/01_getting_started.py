@@ -4,6 +4,7 @@ import random
 
 @task
 def get_customer_ids() -> list[str]:
+
     # Fetch customer IDs from a database or API
     return [f"customer{n}" for n in random.choices(range(100), k=10)]
 
